@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body class="w-11/12 mx-auto">
+    <nav class="  sticky top-0 z-10 ">
+
+        <div class="w-full mx-auto grid lg:grid-cols-3  bg-slate-400">
+            <div class=" flex lg:items-center lg:ml-1 lg:mt-8 lg:mb-6 justify-center items-center ">
+                <h1 onclick="location.href='Home.html'"
+                    class="bg-green-400 text-black rounded-md w-[90px] h-[40px] text-center items-center flex justify-center font-bold cursor-pointer ">
+                    Blog</h1>
+            </div>
+            <div class="flex items-center justify-center lg:justify-start mt-3 lg:mt-0"">
+                <img src=" assets/logo.png" alt="">
+                <h1 class="ml-3 font-extrabold mt-3">Donate Bangladesh</h1>
+            </div>
+            <div class="flex items-center justify-center">
+                <img class="mt-2" src="assets/coin.png" alt="">
+                <h1 id="donate-amount-main" class="ml-2 font-extrabold text-xl mt-2">5500 BDT</h1>
+            </div>
+        </div>
+
+        <div class="text-center  bg-white bg-opacity-30 backdrop-blur-lg p-4 rounded-lg" ">
+            <button onclick=" toggleDonateButtonStyles()" id="donate-id" class="btn bg-green-500 hover:bg-green-500">
+            Donation</button>
+            <button onclick="toggleButtonStyles()" id="history-button" class="btn ">History</button>
+    </nav>
+
+
+    </div>
+
+    <div id="donation-id-from">
+        <div class="flex ml-10 mt-12">
+            <div>
+                <img class="lg:w-[1450px] lg:h-full w-[2550px] h-[400px] -ml-[20px]" src="assets/noakhali.png" alt="">
+            </div>
+            <div class="lg:ml-12">
+                <div class="flex items-center  justify-center h-10 bg-slate-400 w-[160px] rounded-lg">
+                    <img class=" " src="assets/coin.png" alt="">
+                    <h1 id="donate-amount" class="ml-2 font-extrabold lg:text-xl ">0 BDT</h1>
+                </div>
+                <h2 id="Donate-loction" class="font-bold lg:text-lg md:text-sm text-sm mt-2">Donate for Flood at
+                    Noakhali, Bangladesh</h2>
+                <p class="mt-1 lg:text-lg text-xs md:text-xl text-gray-600"> The recent floods in Noakhali have caused
+                    significant
+                    damage to
+                    homes
+                    infrastructure.
+                    Your donation
+                    will help provide essential supplies and to those affected by this disaster. Every contribution, big
+                    or small, makes difference. Please join us in supporting the relief efforts and making a positive
+                    impact on the lives of those in need.</p>
+                <input id="donation-id-1" type="number"
+                    class="  w-full mt-1 border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    placeholder="Enter income" />
+                <button onclick="my_modal_5.showModal()" id="donation-id"
+                    class="donation-id w-full bg-green-400 h-[40px] mt-2 ">Donate
+                    Now</button>
+            </div>
+        </div>
+
+        <div class="flex ml-10 mt-12">
+            <div>
+                <img class="lg:w-[1450px] lg:h-full w-[2550px] h-[400px] -ml-[20px]" src="assets/feni.png" alt="">
+            </div>
+            <div class="lg:ml-12">
+                <div class="flex items-center  justify-center h-10 bg-slate-400 w-[160px] rounded-lg">
+                    <img class=" " src="assets/coin.png" alt="">
+                    <h1 id="donate-amount-1" class="ml-2 font-extrabold lg:text-xl ">0 BDT</h1>
+                </div>
+                <h2 id="Donate-loction-2" class="font-bold lg:text-lg md:text-sm text-sm mt-2">Donate for Flood Relief
+                    in Feni,Bangladesh</h2>
+                <p class="mt-1 lg:text-lg text-xs md:text-xl text-gray-600"> The recent floods in Noakhali have caused
+                    significant
+                    damage to
+                    homes
+                    infrastructure.
+                    Your donation
+                    will help provide essential supplies and to those affected by this disaster. Every contribution, big
+                    or small, makes difference. Please join us in supporting the relief efforts and making a positive
+                    impact on the lives of those in need.</p>
+                <input id="donation-id-2" type="number"
+                    class="  w-full mt-1 border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    placeholder="Enter income" />
+                <button onclick="my_modal_5.showModal()" id="donation-id-button-2"
+                    class="donation-id w-full bg-green-400 h-[40px] mt-2">Donate
+                    Now</button>
+            </div>
+        </div>
+
+
+        <div class="flex ml-10 mt-12">
+            <div>
+                <img class="lg:w-[1450px] lg:h-full w-[2550px] h-[400px] -ml-[20px]" src="assets/quota-protest.png"
+                    alt="">
+            </div>
+            <div class="lg:ml-12">
+                <div class="flex items-center  justify-center h-10 bg-slate-400 w-[160px] rounded-lg">
+                    <img class=" " src="assets/coin.png" alt="">
+                    <h1 id="donate-amount-2" class="ml-2 font-extrabold lg:text-xl ">0 BDT</h1>
+                </div>
+                <h2 class="font-bold lg:text-lg md:text-sm text-sm mt-2">Aid for Injured in the Quota Movement</h2>
+                <p class="mt-1 lg:text-lg text-xs md:text-xl text-gray-600"> The recent floods in Noakhali have caused
+                    significant
+                    damage to
+                    homes
+                    infrastructure.
+                    Your donation
+                    will help provide essential supplies and to those affected by this disaster. Every contribution, big
+                    or small, makes difference. Please join us in supporting the relief efforts and making a positive
+                    impact on the lives of those in need.</p>
+                <input id="donation-id-3" type="number"
+                    class="  w-full mt-1 border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    placeholder="Enter income" />
+                <button onclick="my_modal_5.showModal()" id="donation-id-button-3"
+                    class="donation-id w-full bg-green-400 h-[40px] mt-2">Donate
+                    Now</button>
+            </div>
+        </div>
+
+    </div>
+    <section id="historySeaction">
+        <div id="history-container">
+
+        </div>
+    </section>
+
+
+
+    <div id="show-modal " class="">
+
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <h3 class="text-lg font-bold text-center">Congrates</h3>
+                <img class="ml-[220px] mt-5" src="assets/coin.png" alt="">
+                <p class="py-4 text-center">You Have Donated For HumanKind</p>
+                <h2 class="text-xl font-bold text-center">Succesfully</h2>
+
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn  ml-[150px] mt-5 ">Close Conformation</button>
+                </form>
+            </div>
+    </div>
+
+
+
+    </dialog>
+    <!-- history part -->
+
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
